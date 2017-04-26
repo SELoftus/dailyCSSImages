@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #259FC;
+}
+
+.box {
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 8%;
+    width: 600px;
+    height: 420px;
+    background: none;
+}
+
+.head {
+    position: absolute;
+    top: 16.5%;
+    left: 25%;
+    width: 50%;
+    height: 67%;
+    background-color: #8B6742;
+    /*medium brown*/
+    border-radius: 50%;
+}
+
+.head-copy {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #8B6742;
+    /*medium brown*/
+    border-radius: 50%;
+    z-index: 2;
+    /*indicates depth of div on 'z' axis*/
+}
+
+.ear-left {
+    position: absolute;
+    width: 60%;
+    height: 50%;
+    left: -20%;
+    background: #8B6742;
+    /*medium brown*/
+    border-radius: 50%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.ear-right {
+    position: absolute;
+    width: 60%;
+    height: 50%;
+    right: -20%;
+    background: #8B6742;
+    /*medium brown*/
+    border-radius: 50%;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+
+.inner-ear {
+    position: absolute;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    background: #B2906F;
+    /*light brown*/
+}
+
+
+/*positioning means we only need 1 inner ear div*/
+
+.eye-left {
+    position: absolute;
+    background: #FFFFFF;
+    /*white*/
+    width: 30%;
+    height: 33%;
+    top: 25%;
+    left: 11%;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.eye-right {
+    position: absolute;
+    background: #FFFFFF;
+    /*white*/
+    width: 30%;
+    height: 33%;
+    top: 25%;
+    right: 11%;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.pupil {
+    position: absolute;
+    width: 28%;
+    height: 30%;
+    top: 35%;
+    left: 36%;
+    border-radius: 50%;
+    background: #3F250B;
+    /*medium dark brown*/
+    border: 1px solid #000000;
+    /*black*/
+}
+
+.nose {
+    position: absolute;
+    background: #180D01;
+    /*dark brown*/
+    width: 25%;
+    height: 25%;
+    left: 37%;
+    top: 50%;
+    border-radius: 50px;
+    z-index: 4;
+}
+
+.mouth {
+    position: absolute;
+    left: 34%;
+    top: 80%;
+    width: 100px;
+    height: 20px;
+    border-bottom-left-radius: 30px;
+    /* height + 10px of border */
+    border-bottom-right-radius: 30px;
+    /* height + 10px of border */
+    border-bottom: 4px solid #180D01;
+    /*dark brown*/
+    z-index: 4;
+}
