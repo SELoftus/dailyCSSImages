@@ -1,0 +1,164 @@
+/* Colors */
+/* Shapes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #6392FF;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  width: 600px;
+  height: 420px;
+  background: none;
+}
+
+.head {
+  position: absolute;
+  top: 16.5%;
+  left: 25%;
+  width: 50%;
+  height: 67%;
+  background-color: #523C2A;
+  border-radius: 50%;
+}
+
+.head-copy {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #523C2A;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.ear-left {
+  position: absolute;
+  width: 60%;
+  height: 50%;
+  top: 5%;
+  left: -5%;
+  background: #050402;
+  border-radius: 50%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.ear-right {
+  position: absolute;
+  width: 60%;
+  height: 50%;
+  right: -5%;
+  top: 5%;
+  background: #050402;
+  border-radius: 50%;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+
+.inner-ear {
+  position: absolute;
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  background: #36281C;
+}
+
+.eye-left {
+  position: absolute;
+  background: #FFFFFF;
+  /*white*/
+  width: 20%;
+  height: 23%;
+  top: 25%;
+  left: 21%;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.eye-right {
+  position: absolute;
+  background: #FFFFFF;
+  /*white*/
+  width: 20%;
+  height: 23%;
+  top: 25%;
+  right: 21%;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.pupil {
+  position: absolute;
+  width: 28%;
+  height: 30%;
+  top: 35%;
+  left: 36%;
+  border-radius: 50%;
+  background: #050402;
+}
+
+.nose {
+  position: absolute;
+  background: #050402;
+  width: 20%;
+  height: 17%;
+  left: 40%;
+  top: 50%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 70%;
+  border-bottom-right-radius: 70%;
+  z-index: 4;
+}
+
+.mouth {
+  position: absolute;
+  left: 34%;
+  top: 65%;
+  width: 100px;
+  height: 20px;
+  border-bottom-left-radius: 30px;
+  /* height + 10px of border */
+  border-bottom-right-radius: 30px;
+  /* height + 10px of border */
+  border-bottom: 4px solid #180D01;
+  /*dark brown*/
+  z-index: 4;
+}
+
+.tooth-left {
+  position: absolute;
+  left: 40%;
+  top: 71%;
+  width: 10%;
+  height: 13%;
+  background-color: #FFFFFF;
+  z-index: 5;
+  border-radius: 10%;
+  border-right: 1px solid #050402;
+  z-index: 3;
+}
+
+.tooth-right {
+  position: absolute;
+  left: 50%;
+  top: 71%;
+  width: 10%;
+  height: 13%;
+  background-color: #FFFFFF;
+  z-index: 5;
+  border-radius: 10%;
+  z-index: 3;
+}
