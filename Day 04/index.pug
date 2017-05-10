@@ -1,0 +1,35 @@
+.box
+  .head
+    .head-copy
+      - for (var i = 0; i < 3; i++)
+        .stripe-horizontal-left
+    .stripe-vertical-head
+    .stripe-vertical-left
+    .stripe-vertical-right
+    .stripe-horizontal-left
+    .stripe-horizontal-right
+    .ear-left
+      .inner-ear
+    .ear-right
+      .inner-ear
+    .eye-left
+      .pupil
+    .eye-right
+      .pupil
+    .nose
+    .mouth-left
+    .mouth-right
+  .body
+    - for (var i = 0; i < 9; i++)
+            .stripe-vertical
+    .stripe-container
+      .flex-item
+        .stripe-vertical
+      .flex-item
+         .stripe-vertical
+      .flex-item
+         .stripe-vertical
+  .left-leg-front
+  .left-leg-back
+  .tail
+    .tail-tip

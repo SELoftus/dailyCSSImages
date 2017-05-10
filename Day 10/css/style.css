@@ -1,0 +1,249 @@
+/*sienna1*/
+/*frosted lime*/
+/*azure3*/
+/*antiquewhite3*/
+/*aliceblue*/
+/*antiquewhite4*/
+/*orange*/
+/*cornsilk3*/
+/*indianred3*/
+/*burleywood1*/
+/*gray25*/
+/*sandy brown*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #FF8247;
+}
+
+.box {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  margin: 4% auto;
+}
+
+.elastic {
+  position: absolute;
+  width: 12%;
+  height: 25%;
+  right: 34%;
+  bottom: 5%;
+  border-radius: 100% 30%;
+  border: 16px solid #F4A460;
+  z-index: 1;
+}
+
+.clip-wrapper {
+  position: absolute;
+  width: 5%;
+  height: 20%;
+  left: 35%;
+  bottom: 5.5%;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+.clip-wrapper:nth-child(2) {
+  -webkit-transform: rotate(100deg);
+          transform: rotate(100deg);
+  left: 36%;
+  z-index: 1;
+  bottom: 0;
+}
+.clip-wrapper:nth-child(3) {
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+
+.paper-clip:before {
+  width: 70%;
+  height: 80%;
+  content: " ";
+  background: transparent;
+  display: block;
+  position: absolute;
+  left: 0%;
+  top: 4%;
+  border-radius: 10px;
+  border: 2px solid #CDC8B1;
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.paper-clip {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #CDC8B1;
+  display: inline-block;
+  position: absolute;
+}
+
+.jar {
+  position: absolute;
+  width: 40%;
+  height: 70%;
+  background-color: #F6F9ED;
+  opacity: .5;
+  bottom: 5%;
+  left: 27.5%;
+  -moz-border-bottom-left-radius: 10% 10% 20% 20%;
+  -webkit-border-bottom-left-radius: 10% 10% 20% 20%;
+  border-radius: 10% 10% 20% 20%;
+  border-bottom: 2px solid #CDC0B0;
+  box-shadow: 1px 0 2px #8B8378;
+  z-index: 1;
+}
+
+/*.jar > .top {
+  position: relative;
+  width: 90%;
+  height: 25%;
+  margin: auto;
+  background-color: transparent;
+  border-bottom: 2px solid $glass-border;
+  -moz-border-radius: 100% / 50%;
+	-webkit-border-radius: 100% / 50%;
+	border-radius: 100% / 50%;
+  z-index: 4;
+}*/
+.bottom {
+  position: absolute;
+  width: 60%;
+  height: 2%;
+  background: #C1CDCD;
+  border-top: 1px solid #CDC0B0;
+  box-shadow: 1px 0 2px #8B8378;
+  bottom: -2%;
+  left: 20%;
+  z-index: 3;
+}
+
+.pencil-body {
+  position: absolute;
+  width: 3.75%;
+  height: 80%;
+  bottom: 13%;
+  background-color: #FFA500;
+  left: 50%;
+  z-index: 0;
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+
+.pencil-body-2 {
+  position: absolute;
+  width: 3.75%;
+  height: 80%;
+  bottom: 14.1%;
+  background-color: #FFA500;
+  left: 57%;
+  z-index: 0;
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+.pencil-body-3 {
+  position: absolute;
+  width: 3.75%;
+  height: 80%;
+  bottom: 12%;
+  background-color: #FFA500;
+  left: 38%;
+  z-index: 0;
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
+.pencil-facet {
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  top: 0%;
+  background-color: #FFA500;
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  left: 30%;
+  z-index: 0;
+}
+
+.eraser-ring {
+  position: absolute;
+  width: 100%;
+  height: 3%;
+  top: 5%;
+  background: #CDC8B1;
+  z-index: 1;
+}
+
+.eraser {
+  position: absolute;
+  width: 100%;
+  height: 5%;
+  top: 0%;
+  background: #CD5555;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+}
+
+.tip-wood {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  bottom: -10%;
+  background-color: #FFD39B;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+
+.tip-container {
+  position: absolute;
+  bottom: -3%;
+  width: 50%;
+  height: 5%;
+  left: 26%;
+  -webkit-transform: rotate(62deg);
+}
+
+.triangle {
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+  background-color: #3D3D3D;
+  text-align: left;
+}
+
+.triangle:before,
+.triangle:after {
+  content: '';
+  position: absolute;
+  background-color: inherit;
+}
+
+.triangle,
+.triangle:before,
+.triangle:after {
+  width: .5em;
+  height: .5em;
+  border-top-right-radius: 30%;
+}
+
+.triangle {
+  -webkit-transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866);
+          transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866);
+}
+
+.triangle:before {
+  -webkit-transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707) translate(0, -50%);
+          transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707) translate(0, -50%);
+}
+
+.triangle:after {
+  -webkit-transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
+          transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
+}

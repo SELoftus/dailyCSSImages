@@ -1,0 +1,305 @@
+/*colors*/
+/* RGB */
+/*shapes*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5498b6;
+}
+
+.box {
+  position: relative;
+  display: block;
+  margin-top: 8%;
+  width: 540px;
+  height: 540px;
+  margin: auto;
+}
+
+.dory-body {
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 36%;
+  width: 30%;
+  height: 100%;
+  background-color: #1624ef;
+}
+
+.dory-body-copy {
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 36%;
+  width: 30%;
+  height: 100.5%;
+  background-color: #1624ef;
+  background: -webkit-linear-gradient(left, #1624ef, rgba(242, 243, 248, 0.06), #1624ef);
+  background: linear-gradient(to right, #1624ef, rgba(242, 243, 248, 0.06), #1624ef);
+}
+
+.eye {
+  position: absolute;
+  border-radius: 50%;
+  background: #F2F3F8;
+  top: 28%;
+  left: -15%;
+  width: 55%;
+  height: 17%;
+  z-index: 3;
+}
+.eye:nth-child(1) {
+  left: 65%;
+}
+
+.eyelid-lower {
+  position: absolute;
+  border-radius: 50%;
+  background: #1624ef;
+  top: 35%;
+  left: -13%;
+  width: 50%;
+  height: 10%;
+  z-index: 2;
+  box-shadow: 2px 1px 3px 5px #1416b2;
+}
+.eyelid-lower:nth-child(2) {
+  left: 66%;
+}
+
+.eyelid-upper {
+  position: absolute;
+  border-radius: 50%;
+  background: #060000;
+  top: 26.5%;
+  left: -15%;
+  width: 54%;
+  height: 18%;
+  z-index: 2;
+}
+.eyelid-upper:nth-child(3) {
+  left: 65%;
+}
+
+.mouth {
+  width: 60%;
+  height: 10%;
+  position: absolute;
+  z-index: 4;
+  background-color: #000;
+  top: 75%;
+  left: 21%;
+  border-radius: 0px 0 55px 55px;
+}
+.mouth:before {
+  content: "";
+  width: 50%;
+  height: 12%;
+  position: absolute;
+  z-index: 4;
+  background-color: #FFF;
+  top: 0px;
+  left: 25%;
+  border-radius: 0px 0 85px 85px;
+}
+.mouth:after {
+  content: "";
+  width: 40%;
+  height: 20%;
+  position: absolute;
+  z-index: 4;
+  background-color: #e15728;
+  bottom: 0px;
+  left: 30%;
+  border-radius: 50%;
+}
+
+.iris {
+  position: absolute;
+  border-radius: 50%;
+  background: #A020F0;
+  top: 18%;
+  left: 16%;
+  width: 66%;
+  height: 66%;
+}
+
+.pupil {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #060000;
+  opacity: 0.85;
+  top: 28%;
+  left: 26%;
+  width: 45%;
+  height: 45%;
+}
+
+.head {
+  position: absolute;
+  border-radius: 30%;
+  background-color: #1624ef;
+  width: 41%;
+  height: 20%;
+  top: 25%;
+  left: 31%;
+  z-index: -1;
+}
+
+.freckles {
+  position: absolute;
+  border-radius: 51%;
+  width: 95%;
+  height: 15%;
+  top: 50%;
+  left: 3%;
+  background: -webkit-radial-gradient(left, rgba(22, 36, 239, 0), rgba(22, 36, 239, 0), rgba(22, 36, 239, 0));
+  background: radial-gradient(to right, rgba(22, 36, 239, 0), rgba(22, 36, 239, 0), rgba(22, 36, 239, 0));
+  background-position: 0 0, 30px 30px;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-size: 60px 60px;
+  /*position: absolute;
+  
+  background: $freckle-blue;
+  width: 7%;
+  height: 2%;
+  top: 50%;
+  left: 30%;*/
+}
+
+.crest-left {
+  position: absolute;
+  border-bottom: 39px solid #060000;
+  border-right: 28px solid #060000;
+  border-top: 18px solid #060000;
+  border-left: 1px solid #060000;
+  border-top-right-radius: 1%;
+  border-bottom-right-radius: 30%;
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 50%;
+  z-index: 3;
+  width: 9%;
+  height: 25%;
+  left: 40%;
+  top: 0%;
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
+}
+
+.crest-right {
+  position: absolute;
+  border-top: 35px solid #060000;
+  border-right: 33px solid #060000;
+  border-bottom: 35px solid #060000;
+  border-left: 1px solid #060000;
+  border-bottom-right-radius: 1%;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 50%;
+  z-index: 3;
+  width: 9%;
+  height: 24.5%;
+  right: 39.5%;
+  top: -0.25%;
+  -webkit-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.upper-fin-left {
+  position: absolute;
+  border-radius: 10%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 12%;
+  background: #1624ef;
+  border-left: 40px solid yellow;
+  border-bottom: 9.33px solid yellow;
+  border-top: 10px solid #060000;
+  width: 40%;
+  height: 18%;
+  top: 61%;
+  left: 2%;
+  -webkit-transform: rotate(14deg);
+  z-index: -1;
+}
+
+.fin-stripe-curved-left {
+  position: absolute;
+  border-radius: 10%;
+  border-bottom-left-radius: 90%;
+  border-bottom-right-radius: 6%;
+  background: transparent;
+  border-left: 10px solid #060000;
+  border-bottom: 2px solid #060000;
+  border-top: transparent;
+  width: 100%;
+  height: 105%;
+  top: -5%;
+  left: -1%;
+  -webkit-transform: rotate(0deg);
+  z-index: 1;
+}
+
+.upper-fin-right {
+  position: absolute;
+  border-radius: 10%;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 12%;
+  background: #1624ef;
+  border-right: 40px solid yellow;
+  border-bottom: 9.33px solid yellow;
+  border-top: 10px solid #060000;
+  width: 40%;
+  height: 18%;
+  top: 60%;
+  right: 2%;
+  -webkit-transform: rotate(-21deg);
+  z-index: -1;
+}
+
+.fin-stripe-curved-right {
+  position: absolute;
+  border-radius: 10%;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 12%;
+  background: transparent;
+  border-right: 10px solid #060000;
+  border-bottom: 2px solid #060000;
+  border-top: transparent;
+  width: 100%;
+  height: 105%;
+  top: -5%;
+  right: -1%;
+  -webkit-transform: rotate(0deg);
+  z-index: 1;
+}
+
+.freckles-bottom {
+  position: absolute;
+  width: 95%;
+  height: 1%;
+  top: 55%;
+  left: 1%;
+  background: #1624ef;
+  background: -webkit-repeating-linear-gradient(circle, #1624ef, transparent 10%, #2a2ef0 15%);
+  background: -webkit-repeating-linear-gradient(left, #1624ef, transparent 10%, #2a2ef0 15%);
+  background: repeating-linear-gradient(90deg, #1624ef, transparent 10%, #2a2ef0 15%);
+  z-index: 0;
+}
+
+.freckles-top {
+  position: absolute;
+  width: 98%;
+  height: 2%;
+  top: 50%;
+  left: 1%;
+  background: #1624ef;
+  background: -webkit-repeating-linear-gradient(circle, #1624ef, transparent 10%, #2a2ef0 15%);
+  background: -webkit-repeating-linear-gradient(left, #1624ef, transparent 10%, #2a2ef0 15%);
+  background: repeating-linear-gradient(90deg, #1624ef, transparent 10%, #2a2ef0 15%);
+  z-index: 0;
+}

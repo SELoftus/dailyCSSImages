@@ -1,0 +1,158 @@
+//colors
+$background: #551A8B; /*purple*/
+
+  //leaves
+$dark-green: #183425; /*phthalo green*/
+$medium-green: #0C3F25; /*British racing green*/
+$light-green: #567B66; /*hooker's green*/
+$olive-green: #3A452B; /*kombu green*/
+$taupe: #AC9376; /*light taupe*/
+
+  //flower
+$dark-purple: #2A0315; /*zinnwaldite brown*/
+$burgundy: #800028; /*burgundy*/
+$red: #C40054; /*rubine red*/
+$pink: #F074B2; /*cyclamen*/
+$white: #E1E5F1; /*azureish white*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Wire One', sans-serif;
+  color: white;
+}
+
+body {
+  background: $taupe;
+}
+
+.wrapper {
+  max-width: 543px;
+  top: 2%;
+  margin: auto;
+}
+
+.table-responsive {
+  width: 100%;
+  background: $background;
+}
+
+.box {
+  position: relative;
+  width: 543px;
+  height: 450px;
+  background: linear-gradient($dark-green, $medium-green, $light-green);
+  border: 1px solid $dark-purple;
+}
+
+.stem {
+  position: absolute;
+  width: 2%;
+  height: 50%;
+  bottom: 0%;
+  left: 49%;
+  background-color: $dark-green;
+  background: linear-gradient(-180deg, $olive-green 2%, $medium-green, $dark-green 5%);
+}
+
+.leaf {
+  position: absolute;
+  width: 12%;
+  height: 65%;
+  bottom: -3.25%;
+  left: 30%;
+  background: linear-gradient(90deg, $olive-green 1%, $medium-green, $dark-green 50%);
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 10%;
+  border-top-left-radius: 15%;
+  border-top-right-radius: 100%;
+  border-left: 5px solid $dark-green;
+  border-right: 1px solid $light-green;
+  border-top: 1px solid $olive-green;
+  -webkit-transform: rotate(-18deg);
+  z-index: 2;
+}
+
+.petal-outer-right {
+  position: absolute;
+  width: 20%;
+  height: 47%;
+  top: 14%;
+  right: 29%;
+  background-color: $pink;
+  background: linear-gradient(190deg, $white, $pink, $red, $burgundy, $dark-purple);
+  border-radius: 100% 15% 100% 2%;  
+  border-right: 1px solid $burgundy;
+  border-bottom: 1px solid $dark-purple;
+  border-top: 1px solid $white;
+  z-index: 3;
+}
+
+.petal-outer-left {
+  position: absolute;
+  width: 20%;
+  height: 47%;
+  top: 14%;
+  left: 30%;
+  background-color: $pink;
+  background: linear-gradient(190deg, $white, $pink, $red, $burgundy, $dark-purple);
+  border-radius: 15% 100% 2% 100%;  
+  border-left: 1px solid $burgundy;
+  border-bottom: 1px solid $dark-purple;
+  border-top: 1px solid $white;
+  z-index: 3;
+}
+
+.petal-center {
+  position: absolute;
+  width: 18%;
+  height: 44%;
+  top: 16%;
+  left: 41%;
+  background-color: $red;
+  background: linear-gradient($white, $pink, $red, $burgundy, $dark-purple);
+  border-radius: 80% 90% 51% 50%;
+  border-bottom: 1px solid $dark-purple;
+  border-top: 1px solid $white;
+  z-index: 2;
+}
+
+.petal-back-left {
+  position: absolute;
+  width: 20%;
+  height: 45%;
+  top: 13%;
+  left: 35%;
+  background-color: $burgundy;
+  background: linear-gradient(90deg, $pink, $red, $burgundy, $dark-purple);
+  border-radius: 25% 100% 2% 100%;
+  border: 1px solid $burgundy;
+  z-index: 1;
+}
+
+.petal-back-center {
+  position: absolute;
+  width: 14%;
+  height: 44%;
+  top: 12%;
+  left: 43%;
+  background-color: $dark-purple;
+  background: linear-gradient( $burgundy, $red, $dark-purple);
+  border-radius: 80% 90% 51% 50%;
+  border: 1px solid $dark-purple;
+  z-index: 0;
+}
+
+.petal-back-right {
+  position: absolute;
+  width: 20%;
+  height: 45%;
+  top: 13%;
+  left: 45%;
+  background-color: $burgundy;
+  background: linear-gradient(90deg, $burgundy, $red, $pink);
+  border-radius: 100% 25% 100% 2%;
+  border: 1px solid $burgundy;
+  z-index: 1;
+}

@@ -1,0 +1,274 @@
+/*dark salmon*/
+/*dark tan*/
+/*light tan*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #E9967A;
+}
+
+.box {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  margin-top: 0%;
+}
+
+.bun-bottom {
+  position: absolute;
+  width: 87%;
+  height: 10%;
+  background: -webkit-linear-gradient(#FFA54F 40%, #FEF5CA);
+  background: linear-gradient(#FFA54F 40%, #FEF5CA);
+  border-radius: 12px;
+  top: 80%;
+  left: 6.5%;
+  z-index: 0;
+}
+
+.bun-top {
+  position: absolute;
+  width: 87%;
+  height: 24%;
+  background: -webkit-linear-gradient(#CD853F, #FFA54F);
+  background: linear-gradient(#CD853F, #FFA54F);
+  border-radius: 50% 50% 2% 2%;
+  top: 35%;
+  left: 6.5%;
+  z-index: 4;
+}
+
+.patty-1 {
+  position: absolute;
+  width: 90%;
+  height: 8%;
+  background: #8B4513;
+  border-radius: 12px;
+  top: 72%;
+  left: 5%;
+  z-index: 0;
+}
+
+.patty-2 {
+  position: absolute;
+  width: 90%;
+  height: 8%;
+  background: #8B4513;
+  border-radius: 12px;
+  top: 64%;
+  left: 5%;
+  z-index: 0;
+}
+
+.cheese {
+  position: absolute;
+  width: 90%;
+  height: 4%;
+  background: #FD941F;
+  border-radius: 34% 32% 2% 21%;
+  -webkit-transform: skewX(128deg);
+          transform: skewX(128deg);
+  top: 70%;
+  left: 5%;
+  z-index: 0;
+}
+.cheese:nth-child(4) {
+  top: 62%;
+  border-radius: 33% 14% 46% 26%;
+  z-index: 1;
+}
+
+.bacon-up {
+  position: absolute;
+  width: 22%;
+  height: 8%;
+  background: transparent;
+  border-radius: 50%;
+  border-top: 12px solid #e53b3b;
+  top: 61%;
+  left: 4%;
+  z-index: 2;
+}
+.bacon-up:before, .bacon-up:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 50%;
+  border-top: 12px solid #e53b3b;
+}
+.bacon-up:before {
+  top: -45%;
+  left: 160%;
+}
+.bacon-up:after {
+  top: -45%;
+  left: 320%;
+}
+
+.bacon-down {
+  position: absolute;
+  width: 22%;
+  height: 4%;
+  background: transparent;
+  border-radius: 50%;
+  border-bottom: 12px solid #e53b3b;
+  top: 61%;
+  left: 22%;
+  z-index: 2;
+}
+.bacon-down:before, .bacon-down:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 50%;
+  border-bottom: 12px solid #e53b3b;
+}
+.bacon-down:before {
+  top: 5%;
+  left: 160%;
+}
+
+.lettuce-container {
+  position: absolute;
+  width: 100%;
+  height: 5%;
+  top: 59%;
+  z-index: 2;
+}
+
+.lettuce-1 {
+  position: absolute;
+  width: 11%;
+  height: 100%;
+  background: transparent;
+  border-radius: 50%;
+  border-top: 6px solid #00CD00;
+  top: 20%;
+  left: 4%;
+}
+.lettuce-1:before, .lettuce-1:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 50%;
+  border-top: 6px solid #00CD00;
+}
+.lettuce-1:before {
+  top: -30%;
+  left: 180%;
+}
+.lettuce-1:after {
+  top: -30%;
+  left: 360%;
+}
+
+.lettuce-2 {
+  position: absolute;
+  width: 11%;
+  height: 100%;
+  background: transparent;
+  border-radius: 50%;
+  border-bottom: 6px solid #00CD00;
+  bottom: 18%;
+  left: 14%;
+}
+.lettuce-2:before, .lettuce-2:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 50%;
+  border-bottom: 6px solid #00CD00;
+}
+.lettuce-2:before {
+  top: 0%;
+  left: 180%;
+}
+.lettuce-2:after {
+  top: 0%;
+  left: 360%;
+}
+
+.lettuce-3 {
+  position: absolute;
+  width: 11%;
+  height: 100%;
+  background: transparent;
+  border-radius: 50%;
+  border-top: 6px solid #00CD00;
+  top: 20%;
+  left: 62%;
+}
+.lettuce-3:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 50%;
+  border-top: 6px solid #00CD00;
+}
+.lettuce-3:before {
+  top: -30%;
+  left: 170%;
+}
+
+.lettuce-4 {
+  position: absolute;
+  width: 11%;
+  height: 100%;
+  background: transparent;
+  border-radius: 50%;
+  border-bottom: 6px solid #00CD00;
+  bottom: 18%;
+  left: 71%;
+}
+.lettuce-4:before {
+  position: absolute;
+  content: "";
+  width: 60%;
+  height: 100%;
+  background: transparent;
+  border-radius: 50%;
+  border-bottom: 6px solid #00CD00;
+}
+.lettuce-4:before {
+  top: 0%;
+  left: 175%;
+}
+
+.tomato-left {
+  position: absolute;
+  width: 43%;
+  height: 4%;
+  background: #ff6347;
+  border-radius: 5px 15px 5px 7px;
+  top: 59%;
+  left: 10%;
+  z-index: 2;
+}
+
+.tomato-right {
+  position: absolute;
+  width: 43%;
+  height: 4%;
+  background: #ff6347;
+  border-radius: 5px;
+  top: 58%;
+  right: 8%;
+  -webkit-transform: rotate(6deg);
+          transform: rotate(6deg);
+  z-index: 1;
+}

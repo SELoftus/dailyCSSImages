@@ -1,0 +1,44 @@
+* {
+  font-family: serif;
+  color: #8B4513;
+}
+
+body {
+  background: #8B7355;
+}
+
+.box {
+  position: relative;
+  width: 450px;
+  height: 550px;
+  top: 8%;
+  margin: auto;
+}
+
+.top-margin {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  top: 0%;
+  margin: auto;
+  background: #FFFFFF;
+}
+
+.notepaper {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  top: 8%;
+  margin: auto;
+  background: -webkit-repeating-linear-gradient(#ffffff, #ffffff 1.313em, #465298 1em, #465298 1.375em);
+  background: repeating-linear-gradient(#ffffff, #ffffff 1.313em, #465298 1em, #465298 1.375em);
+}
+
+.right-margin {
+  position: absolute;
+  width: 0.5%;
+  height: 100%;
+  top: 0%;
+  left: 14%;
+  background: #DC143C;
+}
