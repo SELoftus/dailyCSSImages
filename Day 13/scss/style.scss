@@ -1,0 +1,268 @@
+//colors
+$background: #D2B48C;
+$shell: #F5D04C;
+$beef: #5C1B0B;
+$lettuce-light: #ADFF2F;
+$lettuce-dark: #008B00;
+$tomato: #ff6347;
+$tomato-skin: #DF3232;
+$cheese: #FD941F;
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -ms-box-sixing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: $background;
+}
+
+.box {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  margin: auto;
+  margin-top: 4%;
+}
+
+.shell-front {  
+    position: absolute;
+    content: "";
+    width: 90%;
+  height: 50%;
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background: $shell;
+    border: 1px solid brown;
+    top: 25%;
+    left: .5%;
+  z-index: 4;
+}
+
+.shell-back {
+  position: absolute;
+  width: 90%;
+  height: 50%;
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background: $shell;
+  top: 20%;
+  left: 5%;
+  border: 1px solid brown;
+  border-bottom: transparent;
+  z-index: 0;
+}
+
+.shell-bottom {
+  position: absolute;
+  width: 10%;
+  height: 5%;
+  background: $shell;
+  top: 70%;
+  left: 83%;
+  border-right: 1px solid brown;
+  -ms-transform: skewX(-50deg);
+  -webkit-transform: skewX(-50deg);  
+  transform: skewX(-50deg);
+  z-index: 0;
+}
+
+.beef {
+  position: absolute;
+  border-radius: 50%;
+  width: 20%;
+  height: 25%;
+  background: $beef;
+  border: 3px dotted #3D0C02;
+  z-index: 3;
+  top: 49%;
+  left: 74%;
+  &:before, &:after {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    width: 100%;  
+    height: 100%;
+    background: $beef;
+    border: 3px dotted #3D0C02;
+    z-index: 1;
+  }
+  &:before {
+    top: -20%;
+    left: -25%;
+    z-index: 3;
+  }
+  &:after {
+    top: -24%;
+    left: -9%;
+  }
+}
+
+.lettuce-1 {
+  position: absolute;
+  width: 40%;
+  height: 20%;
+  background: transparent;
+  border-bottom: 15px solid $lettuce-light;
+  border-radius: 11%;
+  top: 29%;
+  left: 52%;
+  z-index: 2;
+  &:before, &:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: transparent;
+  border-bottom: 15px solid $lettuce-light;
+  
+  }
+  &:before {
+    border-radius: 14%;
+    top: -20%;
+    left: -9%;
+  }
+  &:after {
+    border-radius: 22%;
+    top: -35%;
+    left: -18.75%;
+  }
+  &:nth-child(3) {
+    top: 26%;
+    left: 47%;
+    border-radius: 24%;
+    z-index: 3;
+  }
+}
+
+.lettuce-2 {
+  position: absolute;
+  width: 40%;
+  height: 20%;
+  background: transparent;
+  border-bottom: 15px solid $lettuce-dark;
+  border-radius: 17%;
+  top: 30%;
+  left: 50%;
+  z-index: 3;
+  &:before, &:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: transparent;
+  border-bottom: 15px solid $lettuce-dark;
+  
+  }
+  &:before {
+    border-radius: 29%;
+    top: -18%;
+    left: -8%;
+  }
+  &:after {
+    border-radius: 21%;
+    top: -35%;
+    left: -12.75%;
+  }
+  &:nth-child(4) {
+    top: 28%;
+    left: 49%;
+    border-radius: 24%;
+    z-index: 1;
+  }
+}
+
+.tomato {
+  position: absolute;
+  width: 7%;
+  height: 8%;
+  background: $tomato;
+  border-top: 4px solid $tomato-skin;
+  border-radius: 25%;
+  left: 70%;
+  top: 31%;
+  z-index: 3;
+  &:before, &:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: $tomato;
+    border-top: 4px solid $tomato-skin;
+  }
+  &:before {
+    border-radius: 40%;
+    top: 29%;
+    left:69%;
+  }
+  &:after {
+    border-radius: 19%;
+    top: -27%;
+    left: -67%;
+  }
+}
+
+.cheese-1 {
+  position: absolute;
+  width: 30%;
+  height: 4%;
+  background: $cheese;
+  border-top: 4px solid $cheese;
+  border-radius: 25%;
+  left: 26%;
+  top: 26%;
+  z-index: 3;
+  &:before, &:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $cheese;
+    border-top: 4px solid $cheese;
+  }
+  &:before {
+    border-radius: 25%;
+    top: 90%;
+    left: -20%;
+  }
+  &:after {
+    border-radius: 25%;
+    top: 90%;
+    left: 60%;
+  }
+}
+
+.cheese-2 {
+  position: absolute;
+  width: 30%;
+  height: 5%;
+  background: $cheese;
+  border-top: 6px solid $cheese;
+  border-radius: 25%;
+  left: 34%;
+  top: 22%;
+  z-index: 3;
+  &:before, &:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $cheese;
+    border-top: 4px solid $cheese;
+  }
+  &:before {
+    border-radius: 21%;
+    top: 90%;
+    left: -10%;
+  }
+  &:after {
+    border-radius: 222%;
+    top: 90%;
+    left: 30%;
+  }
+}
