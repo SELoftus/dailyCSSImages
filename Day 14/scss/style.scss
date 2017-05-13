@@ -1,0 +1,118 @@
+//colors
+$crust: #BB8840;
+$cake: #fcffc5;
+$sauce: #351C15;
+* {
+  margin: 0;
+  padding: 0;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #20B2AA;
+}
+
+.box {
+  position: relative;
+  width: 550px;
+  height: 500px;
+  margin: auto;
+  margin-top: 4%;
+}
+
+.crust {
+  position: absolute;
+  width: 90%;
+  height: 30%;
+  border-bottom-left-radius: 25px;
+  border-left: 10px solid $crust;
+  border-bottom: 10px solid $crust;
+  background: $cake;
+  top: 30%;
+  left: 5%;
+}
+
+.cake-top {
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  ;
+  width: 90%;
+  border-bottom: 60px solid $sauce;
+  border-left: 60px solid transparent;
+  border-right: 420px solid transparent;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.cherry {
+  position: absolute;
+  width: 12%;
+  height: 12%;
+  border-radius: 50% 50% 45% 45%;
+  background: #C40000;
+  top: 15%;
+  left: 10%;
+  z-index: 10;
+}
+
+.cherry-stem {
+  position: absolute;
+  width: 2%;
+  height: 17%;
+  border: transparent;
+  border-right: 4px solid #790604;
+  border-radius: 100%;
+  background: transparent;
+  -ms-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  top: 1%;
+  left: 13%;
+}
+
+.sauce-long {
+  position: absolute;
+  width: 4%;
+  height: 22%;
+  background: $sauce;
+  top: 28%;
+  left: 43.5%;
+  border-radius: 25px;
+  animation: drip 6s 1;
+}
+
+.sauce-medium {
+  position: absolute;
+  width: 3.5%;
+  height: 14%;
+  background: $sauce;
+  top: 28%;
+  left: 37.5%;
+  border-radius: 25px;
+  animation: drip 4s 1;
+}
+
+.sauce-short {
+  position: absolute;
+  width: 3.5%;
+  height: 10%;
+  background: $sauce;
+  top: 28%;
+  left: 54%;
+  border-radius: 25px;
+  animation: drip 2s 1;
+  &:nth-child(7) {
+    left: 24%;
+    animation: drip 5s 1;
+  }
+}
+
+//css animations
+@keyframes drip {
+  0% {
+    height: 0;
+  }
+}
