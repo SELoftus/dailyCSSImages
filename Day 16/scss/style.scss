@@ -1,0 +1,379 @@
+//colors
+$skin: #ECEEC4;
+$scar: #E3A5A0;
+$metals-dark: #A9AEAA;
+$metals: #B6C9CA;
+$hair: #312018;
+
+//shapes
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-repeat: no-repeat;
+  background: linear-gradient(#D1D1D1, #6B6B6B, #000000);
+  height: 100vh;
+  background-image: url("http://teachvaluesnow.org/ebay/8x10_BorisKarloff_BrideofFrankenstein01b.jpg");
+  background-repeat: no-repeat;
+}
+
+.box {
+  position: relative;
+  width: 441px;
+  height: 551px;
+  background: transparent;
+  border: 2px solid gray;
+  margin: auto;
+}
+
+.face {
+  position: absolute;
+  width: 45%;
+  height: 53%;
+  background: $skin;
+  top: 5%;
+  left: 26.6%;
+  border-radius: 32% 36% 42% 40%;
+  border-bottom: 1px solid green;
+  z-index: 1;
+}
+
+.forehead {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  border-top: 2px solid green;
+  border-radius: 50% 50% 42% 40%;
+  top: 11%;
+  z-index: 1;
+}
+
+.staple-sm-left {
+  position: absolute;
+  width: 2%;
+  height: 4%;
+  background: $metals;
+  left: 25%;
+  top: -1%;
+  border-radius: 50% 50% 0 0;
+  transform: rotate(-63deg);
+  z-index: 2;
+}
+
+.staple-sm-center {
+  position: absolute;
+  width: 2%;
+  height: 4%;
+  background: $metals;
+  left: 44%;
+  top: -1%;
+  border-radius: 50% 50% 0 0;
+}
+
+.staple-sm-right {
+  position: absolute;
+  width: 2%;
+  height: 4%;
+  background: $metals;
+  left: 64%;
+  top: -1.25%;
+  border-radius: 50% 50% 0 0;
+}
+
+.staple-lg-left {
+  position: absolute;
+  width: 8%;
+  height: 12%;
+  background: $metals;
+  top: 5%;
+  left: 9%;
+  transform: rotate(-20deg);
+  border-radius: 35% 36% 20% 20%;
+  z-index: 3;
+}
+
+.staple-lg-right {
+  position: absolute;
+  width: 6%;
+  height: 14%;
+  background: $metals;
+  top: 2%;
+  left: 79%;
+  transform: rotate(-6deg);
+  border-radius: 36% 94% 20% 20%;
+}
+
+.scar1 {
+  position: absolute;
+  width: 25%;
+  height: 20%;
+  background: transparent;
+  border-radius: 50%;
+  border-right: 6px solid $scar;
+  top: 14%;
+  left: 1%;
+  transform: rotate(-20deg);
+}
+
+.staple-md-top {
+  position: absolute;
+  width: 6%;
+  height: 2%;
+  background: $metals-dark;
+  right: 0%;
+  top: 29%;
+  transform: rotate(22deg);
+}
+
+.staple-md-bottom {
+  position: absolute;
+  width: 4%;
+  height: 2%;
+  background: $metals-dark;
+  right: 0%;
+  top: 39%;
+  transform: rotate(-12deg);
+}
+
+.brow-ridge {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  border-top: 2px solid gray;
+  border-radius: 50% 50% 42% 40%;
+  top: 31%;
+}
+
+.eye-left {
+  position: absolute;
+  width: 24%;
+  height: 8.09%;
+  border-top: 10px solid green;
+  border-right: 10px solid green;
+  border-radius: 50%;
+  background: white;
+  top: 41%;
+  left: 16%;
+  transform: rotate(-23deg);
+  z-index: 1;
+}
+
+.eye-right {
+  position: absolute;
+  width: 24%;
+  height: 8.09%;
+  border-top: 10px solid green;
+  border-left: 11px solid green;
+  border-radius: 50%;
+  background: white;
+  top: 41%;
+  right: 15%;
+  transform: rotate(15deg);
+}
+
+.pupil {
+  position: absolute;
+  width: 45%;;
+  height: 90%;
+  background: #000000;
+  border-radius: 50%;
+  left: 30%;
+  top: -12%;
+  z-index: 1;
+}
+
+.nose-upper {
+  position: absolute;
+  width: 33%;
+  height: 19%;
+  -webkit-clip-path: polygon(42% 0, 61% 0, 93% 100%, 8% 100%);
+clip-path: polygon(42% 0, 61% 0, 93% 100%, 8% 100%);
+  background: green;
+  top: 39%;
+  left: 34%;
+  border-radius: 50% 50% 10% 10%;
+}
+
+.nose-lower {
+  position: absolute;
+  width: 31%;
+  height: 9%;
+  background: green;
+  top: 54%;
+  left: 35%;
+  border-radius: 50% 50% 30% 30%;
+}
+
+.nostrils {
+  position: absolute;
+  width: 25%;
+  height: 35%;
+  background: #000000;
+  border-radius: 50%;
+  top: 50%;
+  left: 14%;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    border-radius: 50%;
+    top: -15%;
+    left: 184%;
+  }
+}
+
+.scar2 {
+  position: absolute;
+  width: 25%;
+  height: 37%;
+  background: transparent;
+  border-left: 16px solid green;
+  border-radius: 50%;
+  top: 55%;
+  left: 11%;
+  transform: rotate(18deg);
+}
+
+.mouth {
+  position: absolute;
+  width: 43%;
+  height: 13%;
+  top: 73%;
+  left: 30%;
+  background: transparent;
+  border-top: 10px solid black;
+  border-radius: 80%;
+}
+
+.hair-left {
+  position: absolute;
+  width: 8%;
+  height: 20%;
+  border-left: 10px solid $hair;
+  top: 15%;
+  left: 24.25%;
+  border-radius: 50%;
+  z-index: 1;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 30%;
+    top: 71%;
+    left: -53%;
+    border-right: 10px solid $hair;
+    border-radius: 50%;
+    transform: rotate(-19deg);
+    z-index: 2;
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 85%;
+    border-left: 10px solid $hair;
+    border-radius: 80%;
+    top: -56%;
+    left: 40%;
+    transform: rotate(36deg);
+    z-index: 1;
+  }
+}
+
+.hair-right {
+  position: absolute;
+  width: 35%;
+  height: 15%;
+  left: 46%;
+  top: 15%;
+  border-radius: 50%;
+  border-top: 12px solid $hair;
+  transform: rotate(87deg);
+}
+
+.ear-left { 
+  position: absolute;
+  width: 8%;
+  height: 13.5%;
+  background: $skin;
+  border-radius: 55% 20% 20% 50%;
+  top: 35%;
+  left: 20.35%;
+  transform: rotate(-10deg);
+}
+
+.ear-right { 
+  position: absolute;
+  width: 7%;
+  height: 14%;
+  background: $skin;
+  border-radius: 10% 40% 45% 10%;
+  top: 35%;
+  right: 24.5%;
+  transform: rotate(12deg);
+}
+
+.bolt-left {
+  position: absolute;
+  width: 5%;
+  height: 2.5%;
+  background: $metals;
+  top: 59%;
+  left: 25%;
+  transform: rotate(-4deg);
+}
+
+.bolt-end {
+  position: absolute;
+  width: 40%;
+  height: 150%;
+  background: $metals;
+  top: -21%;
+}
+
+.bolt-right {
+  position: absolute;
+  width: 5%;
+  height: 2.5%;
+  background: $metals;
+  top: 58.75%;
+  right: 27.5%;
+  transform: rotate(-3deg);
+}
+
+.bolt-top {
+  position: absolute;
+  width: 60%;
+  height: 65%;
+  background: $metals;
+  top: -62%;
+  left: 15%;
+  border-radius: 40% 40% 0 0;
+}
+
+.neck-top {
+  position: absolute;
+  width: 46%;
+  height: 18%;
+  background: $skin;
+  top: 50%;
+  left: 26%;
+  /*-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);*/
+clip-path: polygon(12% 0%, 86% 0%, 93% 100%, 7% 100%);
+}
+
+.neck-bottom {
+  position: absolute;
+  width: 39.5%;
+  height: 12%;
+  background: $skin;
+  border-radius: 50%;
+  top: 62.75%;
+  left: 29.25%;
+}
