@@ -1,0 +1,428 @@
+/*colors*/
+$skintone: #FAC8BF;
+$skin-shadow: #EBBCB3;
+$w-blue: #2B4273;
+$w-blue-light: #6180A8;
+$blue: #181461;
+$yellow: #FFFF00;
+$yellow-outline: #F8B000;
+$black: #000000;
+$light-gray: #9D9CA1;
+$dark-gray: #7E8386;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #7E8386;
+}
+
+.box {
+  position: relative;
+  width: 651px;
+  height: 551px;
+  background: #F5D483;
+  border: 5px solid white;
+  margin: auto;
+  margin-top: 2%;
+  overflow: hidden;
+}
+
+.background-arch {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  border-radius: 50% 50% 0 0;
+  border: 10px solid $dark-gray;
+  border-bottom: none;
+  top: 10%;
+  left: 10%;
+}
+
+.background-arch-inner {
+  position: absolute;
+  width: 79%;
+  height: 100%;
+  border-radius: 50% 50% 0 0;
+  border: 4px dotted $light-gray;
+  border-bottom: none;
+  top: 10.5%;
+  left: 10.5%;
+}
+
+.background-arch-outer {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  border-radius: 50% 50% 0 0;
+  border: 12px double $blue;
+  border-bottom: none;
+  top: 10%;
+  left: 10%;
+}
+
+.frame-top-upper {
+  position: absolute;
+  width: 100%;
+  height: 3%;
+  background: $blue;
+  top: 4%;
+}
+
+.frame-top-lower {
+  position: absolute;
+  width: 100%;
+  height: 1%;
+  background: $blue;
+  top: 8%;
+  z-index: 1;
+}
+
+.frame-side-outer-left {
+  position: absolute;
+  width: 6%;
+  height: 92%;
+  border-left: 3px solid $light-gray;
+  border-right: 3px solid $light-gray;
+  bottom: 0%;
+  left: 1%;
+  z-index: 0;
+}
+
+.frame-side-inner-left {
+  position: absolute;
+  width: 2%;
+  height: 92%;
+  border-right: 3px solid $light-gray;
+  bottom: 0%;
+  left: 2%;
+  z-index: 0;
+}
+
+.frame-side-outer-right {
+  position: absolute;
+  width: 6%;
+  height: 92%;
+  border-left: 3px solid $light-gray;
+  border-right: 3px solid $light-gray;
+  bottom: 0%;
+  right: 1%;
+  z-index: 0;
+}
+
+.frame-side-inner-right {
+  position: absolute;
+  width: 2%;
+  height: 92%;
+  border-right: 3px solid $light-gray;
+  bottom: 0%;
+  right: 3.75%;
+  z-index: 0;
+}
+
+.wolverine {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  left: 15%;
+}
+
+.head {
+  position: absolute;
+  width: 24%;
+  height: 18%;
+  background: $yellow;
+  border-radius: 20% 100% 0 0;
+  border: 1px solid $yellow-outline;
+  border-bottom: 3px solid $yellow-outline;
+  top: 37%;
+  left: 17.5%; 
+}
+
+.mask-upper {
+  position: absolute;
+  width: 14%;
+  height: 25%;
+  background: $w-blue;
+  border-radius: 0% 100% 0 50%;
+  border-right: 1px solid $w-blue-light;
+  border-top: 1px solid $w-blue-light;
+  border-left: 1px solid $blue;
+  top: 28.5%;
+  left: 10%;
+  z-index: 1;
+  transform: rotate(-15deg);
+}
+
+.mask-upper-front {
+  position: absolute;
+  width: 20%;
+  height: 15%; 
+  border-radius: 0% 100% 0 0;
+  border-bottom: 1px solid $blue;
+  border-right: 1px solid $w-blue-light;
+  background: $w-blue;
+  top: 40%;
+  left: 21%;
+  z-index: 1;
+}
+
+.eye {
+  position: absolute;
+  width: 25%;
+  height: 15%;
+  background: #FFFFFF;
+  border-radius: 50% 10%;
+  top: 70%;
+  left: 62%;
+  transform: rotate(7deg);
+  border-left: 1px solid $w-blue-light;
+  border-bottom: 1px solid $w-blue-light;
+  border-top: 1px solid $blue;
+  border-right: 1px solid $blue;
+}
+
+.mask-lower-front {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  top: 50%;
+  left: 13%;
+  background: $w-blue;
+  border-radius: 0% 50%;
+  border-bottom: 1px solid $blue;
+  border-right: 1px solid $blue;
+  border-left: 1px solid $blue;
+  z-index: 2;
+}
+
+.jaw {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  background: $skintone;
+  top: 50%;
+  left: 20%;
+  border-radius: 0 40% 10% 0;
+  border: 1px solid $skin-shadow;
+  border-bottom: 2px solid $skin-shadow;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.mouth {
+  position: absolute;
+  width: 25%;
+  height: 15%;
+  top: 55%;
+  left: 75%;
+  border-top: 4px outset #000000;
+  border-right: none;
+  border-radius: 50%;
+  padding-top: 2px;
+  z-index: 2;
+}
+
+.stubble {
+  position: absolute;
+  width: 32%;
+  height: 55%;
+  background: none;
+  font: sans-serif;
+  font-size: 1em;
+  line-height: .5em;
+  color: $dark-gray;
+  word-wrap: break-word;
+  border-radius: 35%;
+  bottom: 0%;
+  right: -2%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.neck {
+  position: absolute;
+  width: 19%;
+  height: 20%;
+  background: $yellow;
+  border-radius: 15%;
+  border: 1px solid $yellow-outline;
+  border-bottom: none;
+  top: 55%;
+  left: 13%;
+  z-index: 1;
+}
+
+.chest {
+  position: absolute;
+  width: 40%;
+  height: 30%;
+  background: $yellow;
+  border-radius: 50% 60% 0% 0%;
+  border: 1px solid $yellow-outline;
+  bottom: 0%;
+  z-index: 0;
+}
+
+.stripe-left {
+  position: absolute;
+  width: 50%;
+  height: 80%;
+  border-radius: 50%;
+  background: $w-blue;
+  border-top: 1px solid $blue;
+  left: 0%;
+  top: 14%;
+  z-index: 2;
+}
+
+.stripe-center {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  border-radius: 0 50%;
+  border-right: 22px solid $w-blue;
+  left: 6%;
+  top: 14%;
+  transform: rotate(-12deg);
+  z-index: 5;
+}
+
+.stripe-right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  border-radius: 0 50%;
+  border-right: 22px solid $w-blue;
+  right: -1%;
+  top: 12%;
+}
+
+.shoulder {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border-radius: 50% 50% 0% 0%;
+  background: $w-blue;
+  border-bottom: 30px solid $w-blue-light;
+  border-top: 1px solid $blue;
+  bottom: 1%;
+  left: 1%;
+  transform: rotate(-20deg);
+  z-index: 2;
+}
+
+.arm-upper {
+  position: absolute;
+  width: 18%;
+  height: 12%;
+  background: $skintone;
+  border-radius: 0 25% 10% 0;
+  border-right: 1px solid $skin-shadow;
+  bottom: -6%;
+  left: 6%;
+  transform: rotate(-20deg);
+  z-index: 1;
+}
+
+.hand {
+  position: absolute;
+  width: 11%;
+  height: 10%;
+  background: $w-blue;
+  border-radius: 10%;
+  border: 1px solid $blue;
+  border-bottom: none;
+  bottom: 0;
+  left: 50%;
+  transform: rotate(15deg);
+  z-index: 0;
+}
+
+.fingers {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  top: 0%;
+  left: 5%;
+  background: linear-gradient(90deg, transparent 0%, transparent 5%, $blue 5%, transparent 7%, transparent 30%, $blue 30%, transparent 32%, transparent 54%, $blue 55%, transparent 57%, transparent 82%, $blue 82%, transparent 84%);
+}
+
+.claw-sheath {
+  position: absolute;
+  width: 1.5%;
+  height: 6%;
+  border-radius: 10% 10% 50% 50%;
+  background: $light-gray;
+  top: 92%;
+  left: 54.75%;
+  border-top: 7px double $dark-gray;
+  border-bottom: 8px double $dark-gray;
+  transform: rotate(15deg);
+  z-index: 2;
+  &:before, &:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 10% 10% 50% 50%;
+    background: $light-gray;
+    border-top: 7px double $dark-gray;
+    border-bottom: 8px double $dark-gray;
+    z-index: 4;
+  }
+  &:before {
+    left: 205%;
+    top: -40%;
+  }
+  &:after {
+    right: 178%;
+    top: -40%;
+  }
+}
+
+.wrist {
+  position: absolute;
+  width: 5%;
+  height: 4%;
+  background: $w-blue;
+  border-radius: 10% 10% 50% 50%;
+  border-left: 1px solid $blue;
+  bottom: -2%;
+  left: 50%;
+  transform: rotate(15deg);
+  z-index: 0;
+} 
+
+.claws {
+  position: absolute;
+  width: 5%;
+  height: 50%;
+  border-radius: 50%;
+  border-right: 12px solid $light-gray;
+  left: 56%;
+  top: 45%;
+  transform: rotate(10deg);
+  z-index: 1;
+  box-shadow: 3px 0px 2px $dark-gray;
+  &:before, &:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-right: 12px solid $light-gray;
+    z-index: 1;
+    box-shadow: 2px 0px 1px $dark-gray;
+  }
+  &:before {
+    left: 100%;
+  }
+  &:after {
+    right: 27%;
+  }
+}
