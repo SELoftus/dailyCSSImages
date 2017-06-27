@@ -1,0 +1,715 @@
+//colors
+$medium-red: #742300;
+$red: #600000;
+$dark-yellow: #DF7C00;
+$yellow: #F8E828;
+$white: rgba(238,244,212, 1);
+$dark-gray: #312F2F;
+$light-gray: #8F857D;
+$accent-red: #3C0000;
+$black: #000300;
+$blue: #87CEEB;
+$background1: rgba(13, 17, 96, .5);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $dark-gray;
+}
+
+.box {
+  position: relative;
+  width: 651px;
+  height: 551px;
+  background: $dark-gray;
+  border: 5px solid white;
+  margin: auto;
+  margin-top: 2%;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.iron-man {
+  position: absolute;
+  width: 50%;
+  height: 75%;
+  top: 0%;
+  left: 25%;
+}
+
+.head {
+  position: absolute;
+  width: 10%;
+  height: 12%;
+  background: $yellow;
+  border: 3px solid $red;
+  border-bottom: 8px solid $red;
+  border-top: 1px solid $dark-yellow;
+  left: 45%;
+  top: 3%;
+  border-radius: 40% 40% 40% 40%;
+  z-index: 3;
+  box-shadow: 0px 2px 3px $dark-gray;
+}
+
+.eye-left {
+  position: absolute;
+  width: 40%;
+  height: 10%;
+  background: $blue;
+  top: 30%;
+  left: 5%;  
+}
+
+.eye-glow-left {
+  position: absolute;
+  width: 40%;
+  height: 10%;
+  top: 30%;
+  left: 5%;
+  -moz-box-shadow: 0 0 12px $blue;
+  -webkit-box-shadow: 0 0 12px $blue;
+  box-shadow: 0px 0px 12px $blue;
+}
+.eye-right {
+  position: absolute;
+  width: 40%;
+  height: 10%;
+  background: $blue;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  top: 30%;
+  right: 0%;
+  -moz-box-shadow: 5px 5px 5px $blue;
+  -webkit-box-shadow: 5px 5px 5px $blue;
+  box-shadow: 5px 5px 5px $blue;
+}
+
+.eye-glow-right {
+  position: absolute;
+  width: 40%;
+  height: 10%;
+  top: 30%;
+  right: 5%;
+  -moz-box-shadow: 0 0 12px $blue;
+  -webkit-box-shadow: 0 0 12px $blue;
+  box-shadow: 0px 0px 12px $blue;
+}
+
+.cheek-left {
+  position: absolute;
+  width: 30%;
+  height: 40%;
+  background: $red;
+  border-right: 2px outset $dark-gray;
+  border-radius: 50%;
+  top: 60%;
+  left: -8%;
+}
+
+.cheek-right {
+  position: absolute;
+  width: 30%;
+  height: 40%;
+  background: $red;
+  border-left: 2px outset $dark-gray;
+  border-radius: 50%;
+  top: 60%;
+  right: -8%;
+}
+
+.chin {
+  position: absolute;
+  width: 40%;
+  height: 16%;
+  background: $red;
+  border-radius: 50% 50% 0 0;
+  border: 2px outset $dark-gray;
+  border-bottom: none;
+  top: 83%;
+  left: 30%;
+}
+
+.mouth {
+  position: absolute;
+  width: 50%;
+  height: 10%;
+  border-top: 2px solid $dark-gray;
+  border-radius: 50%;
+  top: 74%;
+  left: 25%;
+}
+
+.forehead {
+  position: absolute;
+  width: 40%;
+  height: 10%;
+  border-bottom: 1px solid $dark-gray;
+  top: 19%;
+  left: 30%;
+  box-shadow: 0px 1px 1px $light-gray;
+}
+
+.neck {
+  position: absolute;
+  width: 8%;
+  height: 5%;
+  background: $red;
+  border-radius: 0 0 50% 50%;
+  border: 1px solid $dark-gray;
+  border-bottom: 2px solid $dark-gray;
+  border-top: none;
+  left: 46%;
+  top: 14%;
+  z-index: 2;
+}
+
+.chest-upper {
+  position: absolute;
+  width: 20%;
+  height: 4%;
+  background: $red;
+  border-radius: 70% 70% 0 0;
+  left: 40%;
+  top: 15%;
+  z-index: 1;
+}
+
+.arc-reactor {
+  position: absolute;
+  width: 35%;
+  height: 30%;
+  background: $white;
+  border-radius: 50%;
+  border: 3px solid $accent-red;
+  top: 15%;
+  left: 32.5%;
+  z-index: 2;
+}
+
+.arc-glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  box-shadow: 0px 0px 15px $white;
+}
+
+.shoulder-left {
+  position: absolute;
+  width: 11%;
+  height: 9%;
+  background: $yellow;
+  border-radius: 100% 30% 10% 5%;
+  border-top: 10px solid $red;
+  border-left: 2px solid $red;
+  box-shadow: 1px 1px 1px $light-gray;
+  left: 30%;
+  top: 17%;
+  transform: rotate(-14deg);
+  z-index: 1;
+}
+
+.upper-arm-left {
+  position: absolute;
+  width: 8%;
+  height: 13%;
+  background: $yellow;
+  border-bottom: 10px solid $red;
+  border-right: 1px solid $red;
+  border-radius: 50% 50% 30% 10% ;
+  left: 32%;
+  top: 21%;
+  transform: rotate(18deg);
+}
+
+.lower-arm-left {
+  position: absolute;
+  width: 7.5%;
+  height: 16%;
+  background: $yellow;
+  border-radius: 0 0 60% 10%;
+  border-top: 5px solid $red;
+  border-right: 5px solid $red;
+  border-left: 1px solid $dark-yellow;
+  left: 26%;
+  top: 32.5%;
+  transform: rotate(23deg);
+}
+
+.lower-arm-left-outer {
+  position: absolute;
+  width: 7%;
+  height: 7%;
+  background: $yellow;
+  border-left: 1px solid $dark-yellow;
+  border-radius: 50%;
+  left: 26%;
+  top: 34%;
+  transform: rotate(22deg);
+}
+
+.wrist-left {
+  position: absolute;
+  width: 6%;
+  height: 4%;
+  background: $red;
+  border: 1px solid $accent-red;
+  top: 46%;
+  left: 21.5%;
+   transform: rotate(27deg);
+}
+
+.hand-left {
+  position: absolute;
+  width: 4%;
+  height: 11.5%;
+  background: $red;
+  left: 17%;
+  top: 48%;
+  transform: rotate(31deg);
+  border-radius: 20% 20% 100% 20%;
+  border: 1px solid $accent-red;
+  border-top: none;
+}
+
+.thumb-left {
+  position: absolute;
+  width: 2%;
+  height: 4%;
+  background: $red;
+  border-radius: 0 0 50% 50%;
+  border: 1px solid $accent-red;
+  left: 24%;
+  top: 50%;
+  transform: rotate(-30deg);
+  z-index: 2;
+}
+
+.repulsor-left {
+  position: absolute;
+  width: 4%;
+  height: 4.25%;
+  background: repeating-radial-gradient($white 0%, transparent 100%);
+  border-radius: 50% 0 0 50%;
+  top: 51%;
+  left: 20%;
+  transform: rotate(40deg);
+  box-shadow: 0px 0px 15px $white;
+}
+
+.repulsor-burst-left {
+  position: absolute;
+  width: 11%;
+  height: 14%;
+  background: radial-gradient(top, $white 50%, transparent);
+  border-radius: 30%;
+  top: 53%;
+  left: 17%;
+  box-shadow: 0px 0px 17px $white;
+}
+
+.repulsor-beam-left {
+  position: absolute;
+  width: 5.5%;
+  height: 100%;
+  background: radial-gradient(top, $white 50%, transparent);
+  border-radius: 30%;
+  top: 62%;
+  left: 19.5%;
+  box-shadow: 0px 0px 18px $white;
+}
+
+.shoulder-right {
+  position: absolute;
+  width: 11%;
+  height: 9%;
+  background: $yellow;
+  border-top: 10px solid $red;
+  border-right: 2px solid $red;
+  border-radius: 30% 100% 10% 5%;
+  right: 30%;
+  top: 17%;
+  transform: rotate(14deg);
+  box-shadow: 1px 1px 1px $light-gray;
+  z-index: 1;
+}
+
+.upper-arm-right {
+  position: absolute;
+  width: 8%;
+  height: 13%;
+  background: $yellow;
+  border-radius: 50% 50% 5% 30% ;
+  border-bottom: 10px solid $red;
+  border-right: 1px solid $dark-yellow;
+  right: 32%;
+  top: 21%;
+  transform: rotate(-14deg);
+}
+
+.lower-arm-right {
+  position: absolute;
+  width: 7%;
+  height: 16%;
+  background: $yellow;
+  border-left: 5px solid $red;
+  border-right: 1px solid $dark-yellow;
+  border-radius: 0 0 10% 60%;
+  right: 27%;
+  top: 32.5%;
+  transform: rotate(-24deg);
+}
+
+.lower-arm-right-outer {
+  position: absolute;
+  width: 7%;
+  height: 7%;
+  background: $yellow;
+  border-radius: 50%;
+  border-right: 1px solid $dark-yellow;
+  right: 26%;
+  top: 35%;
+  transform: rotate(-22deg);
+}
+
+.wrist-right {
+  position: absolute;
+  width: 6%;
+  height: 4%;
+  background: $red;
+  border: 1px solid $accent-red;
+  top: 46%;
+  right: 23%;
+  transform: rotate(-27deg);
+}
+
+.hand-right {
+  position: absolute;
+  width: 4%;
+  height: 11.5%;
+  background: $red;
+  border: 1px solid $accent-red;
+  border-top: none;
+  right: 19%;
+  top: 48%;
+  transform: rotate(-31deg);
+  border-radius: 20% 20% 20% 100%;
+}
+
+.thumb-right {
+  position: absolute;
+  width: 2%;
+  height: 4%;
+  background: $red;
+  border-radius: 0 0 50% 50%;
+  border: 1px solid $accent-red;
+  right: 24%;
+  top: 50%;
+  transform: rotate(30deg);
+  z-index: 2;
+}
+
+.repulsor-right {
+  position: absolute;
+  width: 4%;
+  height: 4.25%;
+  background: repeating-radial-gradient($white 0%, transparent 100%);
+  border-radius: 0 50% 50% 0;
+  top: 51%;
+  right: 20%;
+  transform: rotate(40deg);
+  box-shadow: 0px 0px 15px $white;
+}
+
+.repulsor-burst-right {
+  position: absolute;
+  width: 11%;
+  height: 14%;
+  background: radial-gradient(top, $white 50%, transparent);
+  border-radius: 30%;
+  top: 53%;
+  right: 16%;
+  box-shadow: 0px 0px 17px $white;
+}
+
+.repulsor-beam-right {
+  position: absolute;
+  width: 5.5%;
+  height: 100%;
+  background: radial-gradient(top, $white 50%, transparent);
+  border-radius: 30%;
+  top: 62%;
+  right: 19%;
+  box-shadow: 0px 0px 18px $white;
+}
+
+.torso {
+  position: absolute;
+  width: 23%;
+  height: 21%;
+  background: $red;
+  border-radius: 20% 20% 25% 25%;
+  border-left: 2px solid $accent-red;
+  border-right: 2px solid $accent-red;
+  left: 39%;
+  top: 16.5%;
+  z-index: 1;
+}
+
+.waist {
+  position: absolute;
+  width: 20.5%;
+  height: 19%;
+  background: $red;
+  border-radius: 20% 20% 50% 50%;
+  border-left: 2px solid $accent-red;
+  border-right: 2px solid $accent-red;
+  left: 40%;
+  top: 32%;
+  z-index: 1;
+}
+
+.hips {
+  position: absolute;
+  width: 24%;
+  height: 19%;
+  background: $red;
+  border-radius: 80% 80% 10% 10%;
+  border: 1px solid $accent-red;
+  BORDER-TOP: NONE;
+  left: 38%;
+  top: 40%;
+  z-index: 1;
+}
+
+.leg-upper-left {
+  position: absolute;
+  width: 12%;
+  height: 28%;
+  background: $yellow;
+  border-top: 29px solid $red;
+  border-bottom: 18px solid $red;
+  border-radius: 20% 60% 50% 40%;
+  left: 36.75%;
+  top: 47%;
+  transform: rotate(-7deg);
+  z-index: 2;
+  box-shadow: 0px -1px 1px $accent-red;
+}
+
+.knee-left {
+  position: absolute;
+  width: 8%;
+  height: 5%;
+  background: $red;
+  border-radius: 20% 20% 40% 50%;
+  left: 40%;
+  top: 73%;
+  z-index: 0;
+}
+
+.leg-lower-left {
+  position: absolute;
+  width: 10.25%;
+  height: 20%;
+  background: $yellow;
+  border-bottom: 12px solid $red;
+  border-top: 20px solid $red;
+  border-left: 2px solid $red;
+  border-right: 1px solid $accent-red;
+  border-radius: 30% 40% 30% 52%;
+  left: 39%;
+  top: 74%;
+  z-index: 4;
+}
+
+.ankle-left-upper {
+  position: absolute;
+  width: 6%;
+  height: 8.5%;
+  background: $red;
+  border-radius: 30% 40% 20% 42%;
+  left: 42%;
+  top: 91.5%;
+}
+
+.ankle-left-lower { 
+  position: absolute;
+  width: 9%;
+  height: 5.5%;
+  border: 9px solid $red;
+  border-bottom: none;
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  left: 40.5%;
+  top: 97%;
+}
+
+.foot-left-upper {
+  position: absolute;
+  width: 6%;
+  height: 7%;
+  background: $red;
+  border-radius: 20% 20% 0 0;
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  left: 42%;
+  top: 98%;
+  transform: rotate(-1deg);
+}
+
+.foot-left-lower {
+  position: absolute;
+  width: 8%;
+  height: 6%;
+  background: $red;
+  left: 41%;
+  top: 102%;
+  border-radius: 20% 20% 40% 40%;
+  border-bottom: 4px solid $accent-red;
+}
+
+.leg-upper-right {
+  position: absolute;
+  width: 12%;
+  height: 28%;
+  background: $yellow;
+  border-top: 29px solid $red;
+  border-bottom: 18px solid $red;
+  border-radius: 60% 20% 40% 50%;
+  right: 37.75%;
+  top: 47%;
+  transform: rotate(7deg);
+  box-shadow: 0px -1px 2px $accent-red;
+  z-index: 2;
+}
+
+.knee-right {
+  position: absolute;
+  width: 8%;
+  height: 5%;
+  background: $red;
+  border-radius: 20% 20% 50% 40%;
+  right: 41%;
+  top: 73%;
+  z-index: 0;
+}
+
+.leg-lower-right {
+  position: absolute;
+  width: 10.25%;
+  height: 20%;
+  background: $yellow;
+  border-bottom: 12px solid $red;
+  border-top: 20px solid $red;
+  border-right: 3px solid $red;
+  border-radius: 40% 30% 52% 30%;
+  border-left: 1px solid $red;
+  right: 40%;
+  top: 74%;
+  z-index: 4;
+}
+
+.ankle-right-upper {
+  position: absolute;
+  width: 6%;
+  height: 8.5%;
+  background: $red;
+  border-radius: 40% 30% 42% 20%;
+  right: 43%;
+  top: 91.5%;
+}
+
+.ankle-right-lower { 
+  position: absolute;
+  width: 9%;
+  height: 5.5%;
+  border: 9px solid $red;
+  border-bottom: none;
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  right: 41.75%;
+  top: 97%;
+}
+
+.foot-right-upper {
+  position: absolute;
+  width: 6%;
+  height: 7%;
+  background: $red;
+  border-radius: 20% 20% 0 0;
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  right: 43%;
+  top: 98%;
+  transform: rotate(1deg);
+}
+
+.foot-right-lower {
+  position: absolute;
+  width: 8%;
+  height: 6%;
+  background: $red;
+  border-bottom: 4px solid $accent-red;
+  right: 42%;
+  top: 102%;
+  border-radius: 20% 20% 40% 40%;
+}
+
+.repulsor-burst-feet {
+  position: absolute;
+  width: 22%;
+  height: 14%;
+  background: radial-gradient(top, $white 50%, transparent);
+  border-radius: 30%;
+  top: 107%;
+  left: 39%;
+  box-shadow: 0px 0px 17px $white;
+}
+
+.repulsor-beam-feet {
+  position: absolute;
+  width: 11%;
+  height: 100%;
+  background: radial-gradient(top, $white 50%, transparent);
+  border-radius: 30%;
+  top: 107%;
+  left: 44%;
+  box-shadow: 0px 0px 18px $white;
+}
+
+/*sunburst effect from: https://stackoverflow.com/questions/27526851/sunburst-effect-with-css3-gradient*/
+.grad {
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: 0%;
+}
+
+.grad:after, .grad:before {
+  content: '';
+  position: absolute;
+  background: linear-gradient(90deg, transparent 50%, $background1 50%, $background1), linear-gradient(82deg, transparent 50%, $white 50%, $white), linear-gradient(67deg, transparent 50%, $background1 50%, $background1), linear-gradient(52deg, transparent 50%, $white 50%, $white), linear-gradient(37deg, transparent 50%, $background1 50%, $background1), linear-gradient(22deg, transparent 50%, $white 50%, $white), linear-gradient(7deg, transparent 50%, $background1 50%, $background1), linear-gradient(-8deg, transparent 50%, $white 50%, $white), linear-gradient(-23deg, transparent 50%, $background1 50%, $background1), linear-gradient(-38deg, transparent 50%, $white 50%, $white), linear-gradient(-53deg, transparent 50%, $background1 50%, $background1), linear-gradient(-68deg, transparent 50%, $white 50%, $white), linear-gradient(-83deg, transparent 50%, $background1 50%, $background1), linear-gradient(-90deg, transparent 50%, $white 50%, $white);
+  background-position: 0% 0%;
+  background-size: 200% 100%;
+  height: 100%;
+  width: 51%;
+}
+.grad:before {
+  left: 50%;
+  transform: rotate(180deg);
+}
